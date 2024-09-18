@@ -11,7 +11,6 @@ dotenv.config();
 
 async function bridgeEth(parentSigner, childChainId) {
   /**
-   * Part B: Set Up L2 Provider
    * - Initialize the L2 provider with the Arbitrum Sepolia RPC endpoint.
    * - This provider will be used to interact with the Arbitrum network.
    */
@@ -19,7 +18,6 @@ async function bridgeEth(parentSigner, childChainId) {
 
 
   /**
-   * Part C: Get the L2 Network Configuration
    * - Use the Arbitrum SDK to retrieve the L2 network configuration.
    * - This allows us to interact with the correct Arbitrum network, in this case, Arbitrum Sepolia.
    */
@@ -27,7 +25,6 @@ async function bridgeEth(parentSigner, childChainId) {
   const ethBridger = new EthBridger(l2network);
 
   /**
-   * Part D: Deposit ETH to Arbitrum Sepolia
    * - Utilize the EthBridger to deposit ETH from Ethereum Sepolia to Arbitrum Sepolia.
    * - Here, we're depositing 0.005 ETH.
    */
@@ -37,7 +34,6 @@ async function bridgeEth(parentSigner, childChainId) {
   });
 
   /**
-   * Part E: Wait for Deposit Transaction to be Mined
    * - Wait for the transaction on Ethereum Sepolia to be confirmed.
    * - Log the transaction hash for reference.
    */
@@ -47,7 +43,6 @@ async function bridgeEth(parentSigner, childChainId) {
   console.log("Now we wait for L2 side of the transaction to be executed ⏳");
 
   /**
-   * Part F: Wait for Confirmation on Arbitrum Sepolia
    * - The transaction will also need to be confirmed on Arbitrum Sepolia.
    * - We wait for the child transaction receipt to ensure the ETH has been successfully bridged.
    */
@@ -71,7 +66,6 @@ async function bridgeEth(parentSigner, childChainId) {
 
 async function main() {
   /** 
-   * Part A: Set Up L1 Provider and Signer (Ethereum Sepolia)
    * - Initialize the provider for the L1 network (Ethereum Sepolia).
    * - Create a signer using the private key from .env
    */
