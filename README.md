@@ -23,7 +23,7 @@ Ensure you have npm or yarn installed, then run:
 ```bash
 npm install
 ```
-# or
+### or
 
 ```bash
 yarn install
@@ -43,13 +43,11 @@ PRIVATE_KEY=your-private-key
 * PRIVATE_KEY: Your Ethereum private key used for signing transactions.
 
 ## Usage
-```
 Run the Script
-```
 Execute the script to deposit ETH from Ethereum Sepolia to Arbitrum Sepolia:
 
 npm start
-# or
+### or
 ```
 yarn start
 ```
