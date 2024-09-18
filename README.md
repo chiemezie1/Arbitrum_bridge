@@ -45,8 +45,9 @@ PRIVATE_KEY=your-private-key
 ## Usage
 Run the Script
 Execute the script to deposit ETH from Ethereum Sepolia to Arbitrum Sepolia:
-
+```
 npm start
+```
 ### or
 ```
 yarn start
